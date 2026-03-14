@@ -1050,3 +1050,50 @@
 
 - **已知风险**
   - 若后续任务只涉及纯讨论或未产生实质性交付，是否写入 `progress.md` 仍需按任务性质判断，避免记录噪音
+
+## 2026-03-14（Git / PR 开发流程落地）
+
+- **已完成**
+  - 新增 Git / PR 流程设计文档：`docs/plans/2026-03-14-git-pr-workflow-design.md`
+  - 新增贡献指南：`CONTRIBUTING.md`，明确 `main` / `develop` / `feature/*` / `fix/*` / `release/*` / `hotfix/*` 的使用方式
+  - 新增 PR 模板：`.github/pull_request_template.md`，统一变更背景、验证结果、风险与回滚说明
+  - 将仓库协作流程正式收口为“`main` 稳定发布、`develop` 集成测试、功能分支经 PR 合入”的轻量 Git Flow 变体
+
+- **变更文件**
+  - `docs/plans/2026-03-14-git-pr-workflow-design.md`
+  - `CONTRIBUTING.md`
+  - `.github/pull_request_template.md`
+  - `progress.md`
+
+- **当前状态**
+  - 仓库内的分支策略、PR 说明和提交流程已有可查阅文档支撑，可直接用于后续产品 PR 与阶段验收
+
+- **下一步待办**
+  - 在 GitHub 仓库设置页手动开启 `main` 与 `develop` 的 branch protection
+  - 根据团队评审人补充 `CODEOWNERS`（如后续需要）
+
+- **已知风险**
+  - GitHub branch protection 属于仓库后台配置，无法仅靠仓库文件自动生效，仍需手动补齐
+
+## 2026-03-14（协作规则补强）
+
+- **已完成**
+  - 新增 branch protection 操作清单：`docs/plans/2026-03-14-branch-protection-checklist.md`
+  - 新增 `.github/CODEOWNERS`，为仓库默认评审归属提供基础占位
+  - `CONTRIBUTING.md` 已补充 branch protection 清单引用，便于后续按文档完成 GitHub 后台配置
+
+- **变更文件**
+  - `docs/plans/2026-03-14-branch-protection-checklist.md`
+  - `.github/CODEOWNERS`
+  - `CONTRIBUTING.md`
+  - `progress.md`
+
+- **当前状态**
+  - 仓库内的流程文档已覆盖分支模型、PR 模板、贡献规则、评审归属与 branch protection 配置说明
+
+- **下一步待办**
+  - 在 GitHub Settings -> Branches 中按清单为 `main` / `develop` 落实保护规则
+  - 后续如新增团队成员，再按模块细化 `CODEOWNERS`
+
+- **已知风险**
+  - 当前 `CODEOWNERS` 先以单人仓库 owner 为默认评审人，后续多人协作时需要拆分到具体模块负责人

@@ -1,0 +1,14 @@
+# Default reviewer owner
+* @niu1147713149-png
+
+# Frontend
+/frontend/ @niu1147713149-png
+
+# Backend
+/backend/ @niu1147713149-png
+
+# Repo process and infrastructure
+/.github/ @niu1147713149-png
+/docs/ @niu1147713149-png
+/docker-compose.yml @niu1147713149-png
+/CLAUDE.md @niu1147713149-png
