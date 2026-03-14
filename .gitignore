@@ -1,0 +1,34 @@
+.DS_Store
+Thumbs.db
+
+# Local agent/workspace metadata
+.codex/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Root caches and local data
+.ruff_cache/
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.pnpm-store/
+.next/
+test-results/
+playwright-report/
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
